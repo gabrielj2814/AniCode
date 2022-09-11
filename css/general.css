@@ -5,6 +5,7 @@
     --color-2:#811952;
     --color-3:#171E26;
     --color-texto-comentario-editor:#2B323A;
+    --color-texto-comentario-editor-2:rgb(77, 91, 107);
     --color-puto-rojo:#EF4444;
     --color-puto-amarillo:#FACC15;
     --color-puto-verde:#4ADE80;
@@ -26,6 +27,11 @@ body{
 
 .console-log{
     border: 1px solid aqua;
+}
+
+.seccion-test{
+    width: 100%;
+    min-height: 100vh;
 }
 
 
