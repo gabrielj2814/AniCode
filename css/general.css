@@ -1,0 +1,31 @@
+:root{
+    --color-fondo-principal:#191526;
+    --color-fondo-secundario:#6F2B8C;
+    --color-1:#BF267A;
+    --color-2:#811952;
+    --color-3:#171E26;
+    --color-texto-comentario-editor:#2B323A;
+    --color-puto-rojo:#EF4444;
+    --color-puto-amarillo:#FACC15;
+    --color-puto-verde:#4ADE80;
+    --color-texto-principal-verde:#4ADE80;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--color-fondo-principal);
+}
+
+.console-log{
+    border: 1px solid aqua;
+}
+
+
