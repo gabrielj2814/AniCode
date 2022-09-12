@@ -24,13 +24,60 @@
 .contenedor-menu-movil{
     height: 80px;
     display: none;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu-movil{
+    background-color: var(--color-fondo-principal);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    z-index: 1000;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: transform .5s ease-out, opacity .5s ease-out;
+}
+
+.pointer-event-none{
+    pointer-events: none;
+}
+
+.mostrar-menu-movil{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.icon-menu-movil {
+    color: var(--color-1);
+    width: 40px;
+    height: 40px;
+}
+
+.icon-x-menu-movil {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: var(--color-1);
+    transition: color .5s ease-out, transform .5s ease-out;
+}
+
+.icon-x-menu-movil:hover{
+    color: var(--color-2);
+    transform: scale(1.2);
 }
 
 .seccion-inicio{
     width: 100%;
+    min-height: 100vh;
     background-image: url(../image/imagen_16.png);
     background-repeat: no-repeat;
     background-size: 50% 100%;
+    position: relative;
 }
 
 .contenedor-editor,.contenedor-editor-movil{
@@ -45,7 +92,8 @@
 
 .contenedor-editor-movil{
     display: none;
-    width: 440px;
+    width: 380px;
+    max-width: 440px;
     height: 300px;
 }
 
@@ -56,6 +104,7 @@
     top: 120px;
     right: 80px;
     display: flex;
+    z-index: 90;
 }
 
 .encabezado-editor{
@@ -65,6 +114,7 @@
     flex-direction: row;
     align-items: center;
     border-bottom: 3px solid var(--color-1);
+    position: relative;
 }
 
 .contenedor-nombre-fichero{
@@ -81,8 +131,8 @@
 }
 
 .nombre-fichero{
-  color: var(--color-texto-comentario-editor-2);
-  font-size: 1.5rem;
+    color: var(--color-texto-comentario-editor-2);
+    font-size: 1.5rem;
 }
 
 .punto-editor{
@@ -107,7 +157,6 @@
 .body-editor{
     width: 100%;
     height: 50px;
-
 }
 
 @media screen and (max-width: 991px) {
@@ -121,15 +170,23 @@
     }
 
     .contenedor-menu-movil{
-        display: block;
-    }
-
-    .seccion-inicio{
-        background-image: none ;
+        display: flex;
     }
 
     .contenedor-editor{
         display: none;
+    }
+
+    .seccion-inicio{
+        background-image: url(../image/imagen_18.png);
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 70vh;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 
     .contenedor-editor-movil{

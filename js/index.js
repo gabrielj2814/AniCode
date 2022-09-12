@@ -1,3 +1,6 @@
+let $iconMenuMovil = document.getElementById("iconMenuMovil")
+let $iconXMenuMovil = document.getElementById("iconXMenuMovil")
+
 function isMobile(){
     if((navigator.userAgent.match(/Android/i)) ||
     (navigator.userAgent.match(/webOS/i)) ||
@@ -15,6 +18,14 @@ function isMobile(){
     }
 }
 
+function menuMovil(){
+    // alert("menu movil")
+    let $menuMovil = document.getElementById("menuMovil")
+    $menuMovil.classList.toggle("mostrar-menu-movil")
+    $menuMovil.classList.toggle("pointer-event-none")
+}
+
+
 document.addEventListener("mousemove", e => {
     let mouseX, mouseY = 0
     mouseX= e.pageX - 40
@@ -22,5 +33,8 @@ document.addEventListener("mousemove", e => {
     let $puntero=document.getElementById("puntero")
     $puntero.style=`transform: translate3d(${mouseX}px, ${mouseY}px, 0)`
 })
+
+$iconMenuMovil.addEventListener("click",menuMovil)
+$iconXMenuMovil.addEventListener("click",menuMovil)
 
 isMobile()
