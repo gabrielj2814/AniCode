@@ -19,6 +19,7 @@
 
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 html,body{
@@ -28,6 +29,10 @@ html,body{
 
 body{
     background-color: var(--color-fondo-principal);
+}
+
+.color-morado-texto{
+    color: var(--color-1);
 }
 
 .console-log{
