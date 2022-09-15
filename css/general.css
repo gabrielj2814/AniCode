@@ -7,6 +7,7 @@
     --color-3:#171E26;
     --color-texto-comentario-editor:#2B323A;
     --color-texto-comentario-editor-2:rgb(77, 91, 107);
+    --color-texto-comentario-editor-3:rgb(63, 85, 110);
     --color-puto-rojo:#EF4444;
     --color-puto-amarillo:#FACC15;
     --color-puto-verde:#4ADE80;
@@ -42,6 +43,18 @@ body{
 .seccion-test{
     width: 100%;
     min-height: 100vh;
+}
+
+.color-texto-comentario{
+    color: var(--color-texto-comentario-editor-2);
+}
+
+.color-texto-tipo-dato{
+    color: var(--color-1);
+}
+
+.color-caracteres-espaciales{
+    color: var(--color-fondo-secundario);
 }
 
 /* fuentes  */
