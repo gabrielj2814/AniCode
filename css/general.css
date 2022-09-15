@@ -49,7 +49,15 @@ body{
     color: var(--color-texto-comentario-editor-2);
 }
 
-.color-texto-tipo-dato{
+.titulo-secciones{
+    font-size: 3rem;
+}
+
+.titulo-parrafo{
+    font-size: 2.5rem;
+}
+
+.color-texto-tipo-dato, .color-texto-secciones{
     color: var(--color-1);
 }
 

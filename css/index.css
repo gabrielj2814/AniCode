@@ -262,6 +262,38 @@ main{
     height: 50px;
 }
 
+.seccion-nosotros{
+    width: 100%;
+    position: relative;
+    /* padding: 40px 40px 40px 40px; */
+}
+
+.imagen-nosotros{
+    display: block;
+    width: 350px;
+    height: 350px;
+}
+
+.seccion-servicio{
+    width: 100%;
+    position: relative;
+}
+
+.seccion-trabajo{
+    width: 100%;
+    position: relative;
+}
+
+.seccion-equipo{
+    width: 100%;
+    position: relative;
+}
+
+.seccion-contacto{
+    width: 100%;
+    position: relative;
+}
+
 @media screen and (max-width: 991px) {
     .seccion-menu{
         min-height: 5vh;
